@@ -6,7 +6,7 @@ import getopt
 def send_slack_massage(massage):
     payload ='{"text":"%s"}' % massage
       #Function from slack sdk
-    response = requests.post('https://hooks.slack.com/services/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',data=payload)
+    response = requests.post('#put ur url here',data=payload)
     
     print(response.text)
 
